@@ -4,15 +4,16 @@
     font-weight: 800;
     font-style: normal;
     background-color: #D6DDED;
+    margin: 0px;
  
 }   
 /* header_content End here */
 .header_top {
-    background-image: url("../Assets/Hero-bg.png");
-    background-size: cover;
-    background-position: center;
-    max-width: 1000% ;
-    height: 698px;
+  background-image: url("../Assets/Hero-bg.png");
+  background-size: cover;
+  width: 100%; /* fix max-width issue */
+  height: 698px;
+  
 }
 
 
