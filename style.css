@@ -9,7 +9,7 @@
 }   
 /* header_content End here */
 .header_top {
-  background-image: url("../Assets/Hero-bg.png");
+  background-image: url("./Assets/hero-bg.png");
   background-size: cover;
   width: 100%; /* fix max-width issue */
   height: 698px;
