@@ -1,4 +1,4 @@
-.assigment {
+.assignment {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -76,17 +76,24 @@
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.action_section_ptxt1 {
+.action_section_txt1 {
     color: #252432;
     font-size: 18px;
     font-weight: 300;
 }
 
-.action_section_img img{
-    height:290px;
-    width:428px;
+.action_section_img img {
+    height: 390px;
+    width: 500px;
     border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* smooth effect */
 }
+
+.action_section_img img:hover {
+    transform: scale(1.05); /* slight zoom on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* shadow on hover */
+}
+
 
 /* Action section end here */
 
@@ -111,7 +118,6 @@
 .stats_container {
   display: flex;
   justify-content: space-evenly;
-  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -119,25 +125,37 @@
   margin: 10px 20px;
 }
 
+.stat-item :hover{
+  transform: translateY(-10px); /* lift up on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .stat-item h1 {
-  font-size: 36px;
+  font-size: 50px;
   color: #4a5cff; /* vibrant blue for numbers */
-  font-weight: 700;
+  font-weight: 900;
    margin-bottom: 5px; /* tighter spacing below the number */
 }
 
 .stat-item p {
   color: #666;
   margin-top: 0;
+  font-style: normal;
+  font-weight: 300;
 
 
 }
 .stat-item:hover h1 {
-  color: orange;
+  color: crimson; /* change color on hover */
+  transition: color 0.3s ease; /* smooth transition */
 }
 
 .stat-item:hover p {
-  color: darkgreen;
+  color:orange;
+}
+.productive_section h2 {
+  font-size: 30px;
+  text-align: center;
+  max-width: 1140px;
 }
 
 /* productive_section End  here */
@@ -171,7 +189,14 @@
   padding: 20px;
   width: 300px;
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.testimonial-card:hover {
+  transform: translateY(-10px); /* lift up on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* deeper shadow */
+}
+
 
 .stars {
   display: flex;
@@ -183,12 +208,6 @@
   width: 18px;
   height: 18px;
 }
-
-.testimonial-card h3 {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
 .testimonial-card p {
   font-size: 14px;
   color: #555;
@@ -254,7 +273,7 @@
 }
 
 .btn-cta:hover {
-  background-color: #3849d6;
+  background-color:coral;
 }
 
 .cta-image img {
@@ -263,7 +282,14 @@
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* smooth effect */
 }
+
+.action_section_img img:hover {
+    transform: scale(1.05); /* slight zoom on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* shadow on hover */
+}
+
 
 /* cta Section End  here */
 /* contact Section Start  here */
@@ -336,7 +362,7 @@ form textarea:focus {
 }
 
 .btn-submit:hover {
-  background-color: #3b48d6;
+  background-color: coral;
 }
 
 
@@ -377,7 +403,8 @@ form textarea:focus {
 }
 
 .footer-nav a:hover {
-  color: #4a5cff;
+  color: orangered;
+   transform: scale(1.05);
 }
 
 /*Footer Section start  here*/
